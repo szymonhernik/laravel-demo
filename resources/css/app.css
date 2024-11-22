@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #f0f0f0;
+    font-family: "Figtree", sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+@layer components {
+    .form-input {
+        @apply border rounded-md px-2 py-2 placeholder:text-xs border-black;
+    }
+
+    .form-input-error {
+        @apply border-2 border-red-500;
+    }
+
+    .btn {
+        @apply hover:bg-stone-200 w-full border border-stone-300    text-stone-800 px-4 py-2 rounded-md;
+    }
+}
